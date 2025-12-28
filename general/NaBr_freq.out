@@ -1,0 +1,692 @@
+Job NaBr_freq started on bp1-compute166.data.bp.acrc.priv at Thu Dec 15 17:46:04 2022
+jobid: bp1-compute166-0-639b5d59
+
+  +--------------------------------------------------------------------+
+  |  Jaguar version 11.4, release 135                                  |
+  |                                                                    |
+  |  Copyright Schrodinger, Inc.                                       |
+  |  All Rights Reserved.                                              |
+  |                                                                    |
+  |  The following have contributed to Jaguar (listed alphabetically): |
+  |  Mike Beachy, Art Bochevarov, Dale Braden, Yixiang Cao,            |
+  |  Alan Chien, Chris Cortis, Rich Friesner, Bill Goddard,            |
+  |  Hod Greeley, Tom Hughes, Leif Jacobson, Jean-Marc Langlois,       |
+  |  Daniel Levine, Daniel Mainz, Rob Murphy, Dean Philipp,            |
+  |  Tom Pollard, Murco Ringnalda, Mark Watson, Haoyu Yu.              |
+  |                                                                    |
+  |  Use of this program should be acknowledged in publications as:    |
+  |                                                                    |
+  |  Jaguar, version 11.4, Schrodinger, Inc., New York, NY, 2021.      |
+  |                                                                    |
+  |  A. D. Bochevarov, E. Harder, T. F. Hughes, J. R. Greenwood,       |
+  |  D. A. Braden, D. M. Philipp, D. Rinaldo, M. D. Halls,             |
+  |  J. Zhang, R. A. Friesner, "Jaguar: A High-Performance Quantum     |
+  |  Chemistry Software Program with Strengths in Life and Materials   |
+  |  Sciences", Int. J. Quantum Chem., 2013, 113(18), 2110-2142.       |
+  +--------------------------------------------------------------------+
+  
+  start of program pre
+  
+  Job name: NaBr_freq
+  Executables used: /sw/apps/schrodinger2021-4/jaguar-v11.4/bin/Linux-x86_64
+  Temporary files : /tmp/ar21627/NaBr_freq
+  Maestro file (input):  NaBr_freq.mae
+  Maestro file (output): NaBr_freq.01.mae
+  
+ Contents of input file: &gen section only
+ ----------------Contents start----------------
+&gen
+dftname=b3pw91-d3
+basis=6-31g*
+numd=5
+ip11=2
+iaccg=3
+isolv=2
+ifreq=1
+solvent=benzene
+esolv0=    -175.51709172308
+nogas=1
+&
+ -----------------Contents end-----------------
+ 
+  basis set:             non_standard                    
+  net molecular charge:    0
+  multiplicity:            1
+  
+  This run will use ECP on 1 atom
+  number of basis functions....           27
+  Project from guess basis.. non_standard                    
+  to current basis set ..... non_standard                    
+  
+ Input geometry:
+                                   angstroms
+  atom               x                 y                 z
+  Br1           0.0000000000      0.0000000000     -0.6152192388 
+  Na2           0.0000000000      0.0000000000      2.1118993493 
+   
+  principal moments of inertia:
+        amu*angstrom^2:        0.00000      132.40728      132.40728
+                g*cm^2: 0.00000000E+00 2.19867432E-38 2.19867432E-38
+   
+  rotational constants:
+               cm^(-1):        infinite      0.12731648      0.12731648
+                   GHz:        infinite      3.81685215      3.81685215
+   
+  Molecular weight:     101.91 amu
+   
+  Stoichiometry: NaBr
+  Molecule is linear 
+  Molecular Point Group: C_inf_v 
+	Molecule translated to center of mass 
+	Molecule reoriented along symmetry axes
+  Point Group used: C_inf_v
+  
+  
+ Symmetrized geometry:
+                                   angstroms
+  atom               x                 y                 z
+  Br1           0.0000000000      0.0000000000     -0.6152192388 
+  Na2           0.0000000000      0.0000000000      2.1118993493 
+   
+ 
+  bond lengths (angstroms):
+ 
+ Br1     -Na2     :   2.727119
+ 
+  nuclear repulsion energy.......      14.941281032 hartrees
+ 
+ Non-default options chosen:
+   HF Initial guess: read from Jaguar .in file
+   SCF calculation type: DFT(b3pw91-d3)              
+   DFT=Becke_3_Parameter/HF+Slater+Becke88+PW91+PW-GGAIIC (B3PW91-D3)
+   Solvation energy will be computed using PBF
+     -solute cavity energy will not be included
+     -surface area terms will not be included
+   Vibrational frequencies and related properties will be computed
+      from analytic second derivatives
+   IR intensities will be computed
+   Thermochemical properties will be computed
+   Solvent: benzene                                                         
+   Internal dielectric constant:    1.000
+   Continuum dielectric constant:   2.283
+   Solvent probe molecule radius:   2.600
+  
+ Non-default print settings:
+     11=  2
+  
+ Temporary integer options set:
+     21= -1  73=  2
+  
+  atom       vdw   vdw2    cov     mass  grid  daf  charge   basis
+  Br1       2.095  2.095  1.140   78.918    Y    Y      Y    lav3p*
+  Na2       2.308  1.492  1.540   22.990    Y    Y      Y    6-31g*
+  
+  end of program pre
+   
+ Time(pre)  user:        2.3  user+sys:        2.3  wallclock:        2.5
+  
+  start of program onee
+  
+  smallest eigenvalue of S:    1.630E-02
+  number of canonical orbitals.....           27
+  end of program onee
+   
+ Time(onee)  user:        0.2  user+sys:        0.2  wallclock:        0.2
+  
+  start of program hfig
+  
+  initial wavefunction read from .in file
+  reading wavefunction from input file
+  Project from guess basis.. non_standard                    
+  to current basis set ..... non_standard                    
+          19  orbitals read from .in file
+  virtual orbitals input are ignored
+  Largest Normalization error   8.166302245537428E-009
+  RMS Normalization error   1.867024493509085E-009
+ 
+  Irreducible     Total no   No of occupied orbitals 
+  representation  orbitals   Shell_1  Shell_2    ...
+  A1/Sig+           13          5
+  A2/Sig-            0          0
+  E2/Del1            1          0
+  E2/Del2            1          0
+  E1/Pi1             6          2
+  E1/Pi2             6          2
+  ------------------------
+  Orbital occupation/shell    1.000
+ 
+  end of program hfig
+   
+ Time(hfig)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program probe
+  
+  end of program probe
+   
+ Time(probe)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program grid
+  
+   grid     grid set  grid #  grid sym
+  ------    --------  ------  --------
+  coarse        0        0        1
+  medium        2        1        8
+  fine          0        0        1
+  ultrafine     4        2        8
+  charge       -1        3        8
+  gradient      4        2        8
+  density       0        0        1
+  DFT-fine    -11        4        8
+  DFT-med.    -10        5        8
+  DFT-grad    -12        6        8
+  DFT-der2     -8        7        8
+  DFT-cphf     -9        8        8
+  LMP2-enrg     4        2        8
+  LMP2-grad     2        1        8
+  DFT-cphf2   -15        9        8
+  PBF-dens      0        0        1
+  plotting      0        0        1
+  Rel-grad    -17        0        1
+  
+  number of gridpoints: 
+     atom       Br1      Na2    total
+  grid # 1      113      159      272
+  grid # 2      113      159      272
+  grid # 3      112      118      230
+  grid # 4     1437     1437     2874
+  grid # 5      337      337      674
+  grid # 6     1582     1582     3164
+  grid # 7     2086     3564     5650
+  grid # 8      176      162      338
+  grid # 9      104       95      199
+   
+  end of program grid
+   
+ Time(grid)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program rwr
+  
+  end of program rwr
+   
+ Time(rwr)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program ch
+  
+  gridpoints discarded for being within atomic van der Waals radii            6
+  gridpoints used for charge fit          224
+    out of a possible maximum of          230
+  
+   Electrostatic potential fitting constrained to reproduce
+     total charge:                yes
+     dipole moment:               no 
+     traceless quadrupole moment: no 
+     traceless octupole moment:   no 
+  
+  Atomic charges from electrostatic potential: 
+   
+ Atom       Br1          Na2     
+ Charge   -0.85610      0.85610
+  
+  sum of atomic charges:    -0.000000
+   
+ RMS Error   2.67E-03 hartrees
+ 
+  end of program ch
+   
+ Time(ch)  user:        2.2  user+sys:        2.2  wallclock:        2.4
+  
+  start of program post
+  
+  Writing input files for PBF
+  end of program post
+   
+ Time(post)  user:        2.1  user+sys:        2.1  wallclock:        2.3
+
+  start of program pbf
+
+Pbf Version 4.10
+
+Molecular surface area:       70.59823   [A2]
+Reaction field energy:       -46.49458   [kT]
+  Peak memory usage: 615 Mb
+
+  end of program pbf
+
+ Time(pbf)  user:        0.0  user+sys:        0.1  wallclock:        0.1
+  
+  start of program solv
+  
+   number of surface charges from PBF     376
+   sum of surface charges     -0.00155
+   
+  nuclear repulsion energy.......      14.941281032 hartrees
+  end of program solv
+   
+ Time(solv)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program scf
+  
+ number of electrons..........         18
+ number of alpha electrons....          9
+ number of beta electrons.....          9
+ number of orbitals, total....         27
+ number of doubly-occ'd orbs..          9
+ number of open shell orbs....          0
+ number of occupied orbitals..          9
+ number of virtual orbitals...         18
+ number of hamiltonians.......          1
+ number of shells.............          1
+ SCF type: DFT=Becke_3_Parameter/HF+Slater+Becke88+PW91+PW-GGAIIC (B3PW91-D3)
+ Energy computed with NOPS off.
+ Convergence Criterion:
+    Energy (econv):       1.00E-05
+    RMS density (dconv):  5.00E-06
+  
+       i  u  d  i  g                   
+       t  p  i  c  r                                 RMS    maximum
+       e  d  i  u  i                       energy  density   DIIS  
+       r  t  s  t  d       total energy    change  change    error 
+  
+etot    1  N  N  5  M    -175.59856889438           5.1E-05  9.1E-04
+etot    2  Y  Y  6  M    -175.59856942418  5.3E-07  3.7E-06  2.7E-05
+etot    3  N  Y  2  U    -175.59855873807 -1.1E-05  1.8E-05  9.1E-04
+etot    4  N  Y  2  U    -175.59855893109  1.9E-07  3.8E-06  6.0E-04
+etot    5  N  N  2  U    -175.59855895879  2.8E-08  0.0E+00  0.0E+00
+ 
+  Computing the dispersion energy correction...
+  
+  
+ Energy components, in hartrees:
+   (A)  Total zero-electron terms....      14.39877809944
+   (B)    Nuclear-nuclear............      14.94128103171
+   (C)    Nuclear-solvent............      -0.54250293227
+   (E)  Total one-electron terms.....    -279.10862411573
+   (F)    Electron-nuclear...........    -445.43963769639
+   (G)    Electron-solvent...........       0.45391663239
+   (H)    Kinetic....................     165.87709694826
+   (I)  Total two-electron terms.....      89.11128705750
+   (J)    Coulomb....................     106.19170550500
+   (K)    Exchange+Correlation.......     -17.08041844750
+   (L)  Electronic energy............    -189.99733705823  (E+I)
+   (N0) D3 correction................      -0.00069497187
+   (N)  Total quantum mech. energy...    -175.59925393065  (A+L+N0)
+   (O)  Gas phase energy.............    -175.51709172308
+   (P)  Solution phase energy........    -175.55496078072  (Q+R+S)
+   (Q)    Total solute energy........    -175.51066763078  (N-C-G)
+   (R)    Total solvent energy.......      -0.04429314994  (C/2+G/2)
+   (S)    Solute cavity energy.......       0.00000000000
+   (U)  Reorganization energy........       0.00642409230  (Q-O)
+   (V)  Solvation energy.............      -0.03786905764  (P-O)
+  
+ SCFE:  Solution phase energy: DFT(b3pw91-d3)       -175.55496078072 hartrees
+        SCF iterations:   5
+  
+ 
+ HOMO energy:    -0.22452
+ LUMO energy:    -0.03000
+ 
+  Orbital energies (hartrees)/symmetry label: 
+   -38.47674 A1/Sig+    -2.23581 A1/Sig+    -1.16372 E1/Pi1     -1.16372 E1/Pi2 
+    -1.16271 A1/Sig+    -0.65020 A1/Sig+    -0.23833 A1/Sig+    -0.22452 E1/Pi2 
+    -0.22452 E1/Pi1     -0.03000 A1/Sig+     0.02098 E1/Pi1      0.02098 E1/Pi2 
+     0.03412 A1/Sig+     0.11278 A1/Sig+     0.15499 E1/Pi1      0.15499 E1/Pi2 
+     0.19395 A1/Sig+     0.38540 E1/Pi1      0.38540 E1/Pi2 
+ 
+  end of program scf
+   
+ Time(scf)  user:        2.4  user+sys:        2.4  wallclock:        2.7
+  
+  start of program sole
+  
+    SCRF                   solvation energy
+  iteration          Hartrees            kcal/mol
+     0               0.0000000            0.0000
+     1              -0.0378691          -23.7632
+  
+  solvation energy not yet converged... 
+  
+  end of program sole
+   
+ Time(sole)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program ch
+  
+  gridpoints discarded for being too close to bond charge centers            2
+  gridpoints discarded for being within atomic van der Waals radii     11633248
+  gridpoints used for charge fit         1792
+    out of a possible maximum of         1792
+  
+   Electrostatic potential fitting constrained to reproduce
+     total charge:                yes
+     dipole moment:               no 
+     traceless quadrupole moment: no 
+     traceless octupole moment:   no 
+  
+  Atomic charges from electrostatic potential: 
+   
+ Atom       Br1          Na2     
+ Charge   -0.85607      0.85607
+  
+  sum of atomic charges:    -0.000000
+   
+ RMS Error   2.67E-03 hartrees
+ 
+  end of program ch
+   
+ Time(ch)  user:        2.2  user+sys:        2.2  wallclock:        2.4
+  
+  start of program post
+  
+  Writing input files for PBF
+  end of program post
+   
+ Time(post)  user:        2.2  user+sys:        2.2  wallclock:        2.3
+
+  start of program pbf
+
+Pbf Version 4.10
+
+Molecular surface area:       70.59823   [A2]
+Reaction field energy:       -46.49153   [kT]
+  Peak memory usage: 615 Mb
+
+  end of program pbf
+
+ Time(pbf)  user:        0.0  user+sys:        0.1  wallclock:        0.1
+  
+  start of program solv
+  
+   number of surface charges from PBF     376
+   sum of surface charges     -0.00155
+   
+  nuclear repulsion energy.......      14.941281032 hartrees
+  end of program solv
+   
+ Time(solv)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program scf
+  
+ Energy computed with NOPS off.
+ Convergence Criterion:
+    Energy (econv):       1.00E-05
+    RMS density (dconv):  5.00E-06
+  
+       i  u  d  i  g                   
+       t  p  i  c  r                                 RMS    maximum
+       e  d  i  u  i                       energy  density   DIIS  
+       r  t  s  t  d       total energy    change  change    error 
+  
+etot    1  N  N  2  U    -175.59855604475           3.1E-05  5.4E-04
+etot    2  N  Y  2  U    -175.59855610561  6.1E-08  1.2E-06  2.4E-06
+etot    3  N  N  2  U    -175.59855610460 -1.0E-09  0.0E+00  0.0E+00
+ 
+  Computing the dispersion energy correction...
+  
+  
+ Energy components, in hartrees:
+   (A)  Total zero-electron terms....      14.39879597468
+   (B)    Nuclear-nuclear............      14.94128103171
+   (C)    Nuclear-solvent............      -0.54248505703
+   (E)  Total one-electron terms.....    -279.10874712164
+   (F)    Electron-nuclear...........    -445.43993572746
+   (G)    Electron-solvent...........       0.45390048053
+   (H)    Kinetic....................     165.87728812529
+   (I)  Total two-electron terms.....      89.11139504236
+   (J)    Coulomb....................     106.19183684466
+   (K)    Exchange+Correlation.......     -17.08044180230
+   (L)  Electronic energy............    -189.99735207928  (E+I)
+   (N0) D3 correction................      -0.00069497187
+   (N)  Total quantum mech. energy...    -175.59925107646  (A+L+N0)
+   (O)  Gas phase energy.............    -175.51709172308
+   (P)  Solution phase energy........    -175.55495878822  (Q+R+S)
+   (Q)    Total solute energy........    -175.51066649997  (N-C-G)
+   (R)    Total solvent energy.......      -0.04429228825  (C/2+G/2)
+   (S)    Solute cavity energy.......       0.00000000000
+   (U)  Reorganization energy........       0.00642522311  (Q-O)
+   (V)  Solvation energy.............      -0.03786706514  (P-O)
+  
+ SCFE:  Solution phase energy: DFT(b3pw91-d3)       -175.55495878822 hartrees
+        SCF iterations:   3
+  
+ 
+ HOMO energy:    -0.22452
+ LUMO energy:    -0.03000
+ 
+  Orbital energies (hartrees)/symmetry label: 
+   -38.47673 A1/Sig+    -2.23580 A1/Sig+    -1.16371 E1/Pi1     -1.16371 E1/Pi2 
+    -1.16270 A1/Sig+    -0.65019 A1/Sig+    -0.23832 A1/Sig+    -0.22452 E1/Pi1 
+    -0.22452 E1/Pi2     -0.03000 A1/Sig+     0.02098 E1/Pi1      0.02098 E1/Pi2 
+     0.03412 A1/Sig+     0.11278 A1/Sig+     0.15499 E1/Pi2      0.15499 E1/Pi1 
+     0.19395 A1/Sig+     0.38540 E1/Pi1      0.38540 E1/Pi2 
+ 
+  end of program scf
+   
+ Time(scf)  user:        2.3  user+sys:        2.3  wallclock:        2.5
+  
+  start of program sole
+  
+    SCRF                   solvation energy
+  iteration          Hartrees            kcal/mol
+     0               0.0000000            0.0000
+     1              -0.0378691          -23.7632
+     2              -0.0378671          -23.7619
+  
+  stopping: solvation energy converged
+  
+  WARNING: 
+  The solvation energy is computed from 
+  energies at the solution phase geometry and
+  at the gas phase geometry.  Because the 
+  nogas=1 flag was used, the gas phase geometry
+  was not optimized in this calculation; 
+  instead the input gas phase energy (esolv0)
+  was assumed to be the correct energy of the
+  optimized gas phase geometry. 
+  
+  iterations:   2    sfinal:    -23.7619 kcal/mol
+  
+  end of program sole
+   
+ Time(sole)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program cutabab2
+  
+  end of program cutabab2
+   
+ Time(cutabab2)  user:        0.2  user+sys:        0.2  wallclock:        0.1
+  
+  start of program der2a
+  
+  end of program der2a
+   
+ Time(der2a)  user:        0.2  user+sys:        0.2  wallclock:        0.2
+  
+  start of program grid
+  
+  
+   Turning symmetry off because some of the
+   following programs cannot use it.
+   grid     grid set  grid #  grid sym
+  ------    --------  ------  --------
+  coarse        0        0        1
+  medium        2        1        8
+  fine          0        0        1
+  ultrafine     4        2        8
+  charge       -1        3        8
+  gradient      4        2        8
+  density       0        0        1
+  DFT-fine    -11        4        8
+  DFT-med.    -10        5        8
+  DFT-grad    -12        6        8
+  DFT-der2     -8        7        8
+  DFT-cphf     -9        8        8
+  LMP2-enrg     4        2        8
+  LMP2-grad     2        1        8
+  DFT-cphf2   -15        9        8
+  PBF-dens      0        0        1
+  plotting      0        0        1
+  Rel-grad    -17        0        1
+  
+  number of gridpoints: 
+     atom       Br1      Na2    total
+  grid # 1      520      771     1291
+  grid # 2      520      771     1291
+  grid # 3      539      579     1118
+  grid # 4     8582     8582    17164
+  grid # 5     1192     1192     2384
+  grid # 6     9488     9488    18976
+  grid # 7    11604    21102    32706
+  grid # 8      714      642     1356
+  grid # 9      360      338      698
+   
+  end of program grid
+   
+ Time(grid)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program der2b
+  
+  end of program der2b
+   
+ Time(der2b)  user:        0.3  user+sys:        0.3  wallclock:        0.3
+  
+  start of program der2nda
+  
+  Computing the dispersion energy correction, gradient, hessian...
+ 
+  end of program der2nda
+   
+ Time(der2nda)  user:        0.4  user+sys:        0.4  wallclock:        0.3
+  
+  start of program der2ndb
+  
+  end of program der2ndb
+   
+ Time(der2ndb)  user:        0.6  user+sys:        0.6  wallclock:        0.6
+  
+  start of program rwr
+  
+  end of program rwr
+   
+ Time(rwr)  user:        0.1  user+sys:        0.1  wallclock:        0.1
+  
+  start of program cphfa
+  
+       1  vectors produced in CPHF
+  
+     v    i  j  k  i  g
+     e    t  c  c  c  r
+     c    e  o  o  u  i
+     t    r  r  r  t  d       RMS  
+  
+     1    1  5  2  6  M     8.9E-02
+     1    2  5  2  6  M     2.7E-03
+     1    3  0  0  6  M     2.0E-04
+     1    4  0  0  6  M     9.4E-06
+  
+  
+  Atomic Polar Tensors (au): Total
+  =========================
+  
+  APT for atom Br1     
+  --------------------------------------
+       -0.8176      -0.0000       0.0001
+       -0.0000      -0.8181      -0.0000
+       -0.0000       0.0001      -0.8853
+  --------------------------------------
+  
+  APT for atom Na2     
+  --------------------------------------
+        0.8102      -0.0000      -0.0000
+       -0.0000       0.8093       0.0001
+        0.0000      -0.0000       0.9540
+  --------------------------------------
+  
+  end of program cphfa
+   
+ Time(cphfa)  user:        0.7  user+sys:        0.7  wallclock:        0.8
+  
+  start of program freq
+  
+   
+  Number of frequencies:   1
+  harmonic frequencies in cm**-1, reduced masses in amu,
+  force constants in mDyne/A, and
+  normal modes in cartesian coordinates:           1
+  IR intensities in km/mol
+  
+  vibration #            1
+                  --------
+  frequencies       206.21
+  symmetries       A1      
+  intensities        48.23
+  reduc. mass        17.80
+  force const         0.45
+    Br1      X     0.00000
+    Br1      Y     0.00000
+    Br1      Z    -0.05347
+    Na2      X     0.00000
+    Na2      Y     0.00000
+    Na2      Z     0.18353
+  
+  Number of imaginary frequencies:   0
+   
+  Writing vibrational animation data to NaBr_freq.vib
+  Writing IR vibrational spectrum data to NaBr_freq_vib.spm
+  rotational symmetry number:  1
+
+  rotational temperatures (K):      0.183180      0.183180
+   
+  The Quasi-Harmonic approximation will be applied to compute
+  vibrational constributions to thermodynamic properties.
+  Frequencies will be adjusted to a minimum value of  100.00 cm^-1.
+
+  vibrational temperatures:
+       mode:      1
+  temp. (K):   296.68
+   
+   
+  Thermodynamic properties calculated assuming an ideal gas
+
+  In the table below, the units for temperature
+  are kelvins, the units for U, H, and G are
+  kcal/mol and the units for Cv and S are cal/(mol K)
+
+  The zero point energy (ZPE):      0.295 kcal/mol
+  is not included in U, H, or G in the table below
+  
+ 
+  =============================================================================
+  Thermodynamic properties for P = 1.00E+00 atm, calculated at   1 temperatures
+
+
+  T =   298.15 K, P = 1.00E+00 atm
+   
+                  U         Cv          S          H          G        ln(Q)
+              =========  =========  =========  =========  =========  =========
+  trans.          0.889      2.981     39.774      1.481    -10.378   17.51523
+  rot.            0.592      1.987     16.682      0.592     -4.381    7.39488
+  vib.            0.346      1.831      2.077      0.346     -0.273    0.46155
+  elec.           0.000      0.000      0.000      0.000      0.000    0.00000
+  ----------------------------------------------------------------------------
+  total           1.827      6.799     58.534      2.420    -15.032   25.37166
+   
+   Total internal energy, Utot(SCFE + ZPE + U):    -175.551577 hartrees
+   Total enthalpy, Htot (Utot + nRT), with n=1:    -175.550633 hartrees
+    Total Gibbs free energy, Gtot (Htot - T*S):    -175.578445 hartrees
+   
+  end of program freq
+   
+ Time(freq)  user:        2.2  user+sys:        2.2  wallclock:        2.5
+  
+  start of program post
+  
+  Writing input files for PBF
+  end of program post
+   
+ Time(post)  user:        2.1  user+sys:        2.1  wallclock:        2.3
+
+ Total cpu seconds     user:       8.660   user+sys:       8.660
+  
+ Total elapsed time:    31 seconds
+
+Job NaBr_freq completed on bp1-compute166.data.bp.acrc.priv at Thu Dec 15 17:46:35 2022
